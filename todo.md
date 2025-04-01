@@ -28,7 +28,7 @@
 - [x] Set up project structure and dependencies
 - [x] Implement core data models
 - [x] Implement data import/export functionality
-- [ ] Implement CSRD reporting features
+- [x] Implement CSRD reporting features
 - [ ] Implement data verification mechanisms
 
 ## Testing
