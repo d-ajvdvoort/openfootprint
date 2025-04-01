@@ -1,0 +1,6 @@
+/* This file ensures proper routing for single-page applications */
+/* All routes should redirect to index.html to let the client-side router handle routing */
+/* https://render.com/docs/static-site-redirects-rewrites */
+
+/* Redirect all routes to index.html */
+/* spa = true */
