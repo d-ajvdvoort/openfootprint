@@ -7,6 +7,7 @@ import Facilities from './pages/Facilities';
 import EmissionReports from './pages/EmissionReports';
 import EmissionStatements from './pages/EmissionStatements';
 import CSRDReports from './pages/CSRDReports';
+import ExcelExport from './pages/ExcelExport';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <li><Link to="/emission-reports">Emission Reports</Link></li>
               <li><Link to="/emission-statements">Emission Statements</Link></li>
               <li><Link to="/csrd-reports">CSRD Reports</Link></li>
+              <li><Link to="/excel-export">Excel Export</Link></li>
             </ul>
           </nav>
         </header>
@@ -34,6 +36,7 @@ function App() {
             <Route path="/emission-reports" element={<EmissionReports />} />
             <Route path="/emission-statements" element={<EmissionStatements />} />
             <Route path="/csrd-reports" element={<CSRDReports />} />
+            <Route path="/excel-export" element={<ExcelExport />} />
           </Routes>
         </main>
         <footer className="App-footer">
