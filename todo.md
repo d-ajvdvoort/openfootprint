@@ -44,6 +44,6 @@
 - [x] Create installation and setup guide
 
 ## Finalization
-- [ ] Review code and functionality
-- [ ] Push final code to GitHub
-- [ ] Create release version
+- [x] Review code and functionality
+- [x] Push final code to GitHub
+- [x] Create release version
