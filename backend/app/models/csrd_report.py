@@ -54,12 +54,12 @@ class CSRDReport(CSRDReportBase):
                 "status": "Draft",
                 "version": "1.0",
                 "prepared_by": "Sustainability Department",
-                "approved_by": null,
+                "approved_by": None,
                 "emission_report_ids": [
                     "namespace:transactional-data--EmissionReport:12345",
                     "namespace:transactional-data--EmissionReport:12346"
                 ],
                 "created_at": "2025-04-01T00:00:00Z",
-                "updated_at": null
+                "updated_at": None
             }
         }
