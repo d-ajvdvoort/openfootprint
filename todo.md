@@ -19,15 +19,15 @@
 - [x] Create README.md with project description
 
 ## Software Design
-- [ ] Design overall architecture
-- [ ] Define data models based on JSON files
-- [ ] Design API endpoints for CSRD reporting
-- [ ] Create database schema
+- [x] Design overall architecture
+- [x] Define data models based on JSON files
+- [x] Design API endpoints for CSRD reporting
+- [x] Create database schema
 
 ## Implementation
-- [ ] Set up project structure and dependencies
-- [ ] Implement core data models
-- [ ] Implement data import/export functionality
+- [x] Set up project structure and dependencies
+- [x] Implement core data models
+- [x] Implement data import/export functionality
 - [ ] Implement CSRD reporting features
 - [ ] Implement data verification mechanisms
 

@@ -1,57 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import Dashboard from './pages/Dashboard';
+import Organizations from './pages/Organizations';
+import Facilities from './pages/Facilities';
+import EmissionReports from './pages/EmissionReports';
+import EmissionStatements from './pages/EmissionStatements';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [apiStatus, setApiStatus] = useState(null);
-
-  useEffect(() => {
-    // Check API health when component mounts
-    const checkApiHealth = async () => {
-      try {
-        const response = await fetch('http://localhost:8000/health');
-        const data = await response.json();
-        setApiStatus(data.status);
-      } catch (error) {
-        console.error('Error checking API health:', error);
-        setApiStatus('unavailable');
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    checkApiHealth();
-  }, []);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>OpenFootprint</h1>
-        <h2>CSRD Compliance Reporting</h2>
-        
-        <div className="api-status">
-          {isLoading ? (
-            <p>Checking API status...</p>
-          ) : (
-            <p>API Status: <span className={apiStatus === 'healthy' ? 'status-ok' : 'status-error'}>
-              {apiStatus || 'unavailable'}
-            </span></p>
-          )}
-        </div>
-        
-        <div className="dashboard-preview">
-          <h3>Dashboard Preview</h3>
-          <p>The OpenFootprint dashboard will provide tools for:</p>
-          <ul>
-            <li>Emissions tracking and reporting</li>
-            <li>Organizational structure management</li>
-            <li>Facility-level emissions monitoring</li>
-            <li>CSRD compliance verification</li>
-            <li>Data quality assessment</li>
-          </ul>
-        </div>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <h1>OpenFootprint</h1>
+          <h2>CSRD Compliance Reporting</h2>
+          <nav className="main-nav">
+            <ul>
+              <li><Link to="/">Dashboard</Link></li>
+              <li><Link to="/organizations">Organizations</Link></li>
+              <li><Link to="/facilities">Facilities</Link></li>
+              <li><Link to="/emission-reports">Emission Reports</Link></li>
+              <li><Link to="/emission-statements">Emission Statements</Link></li>
+            </ul>
+          </nav>
+        </header>
+        <main className="App-content">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/organizations" element={<Organizations />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/emission-reports" element={<EmissionReports />} />
+            <Route path="/emission-statements" element={<EmissionStatements />} />
+          </Routes>
+        </main>
+        <footer className="App-footer">
+          <p>OpenFootprint - CSRD Compliance Reporting © 2025</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
