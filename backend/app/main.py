@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from app.api import organizations, facilities, emission_reports, emission_statements, csrd_reports, excel_export
 
 app = FastAPI(
     title="OpenFootprint API",
@@ -15,6 +16,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include all API routers
+app.include_router(organizations.router)
+app.include_router(facilities.router)
+app.include_router(emission_reports.router)
+app.include_router(emission_statements.router)
+app.include_router(csrd_reports.router)
+app.include_router(excel_export.router)
 
 @app.get("/")
 async def root():
