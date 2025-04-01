@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenFootprint - CSRD Compliance Reporting</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+        .feature h3 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .screenshot {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .screenshot-caption {
+            background-color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OpenFootprint</h1>
+        <p>CSRD Compliance Reporting Software</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>About OpenFootprint</h2>
+            <p>OpenFootprint is a comprehensive software solution designed for CSRD (Corporate Sustainability Reporting Directive) compliance reporting. This application helps organizations manage their sustainability data, track environmental impacts, and generate compliant reports according to European Sustainability Reporting Standards (ESRS).</p>
+            
+            <p>This project was developed based on detailed JSON data models to ensure accurate and complete implementation of CSRD reporting requirements.</p>
+        </div>
+        
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Organization Management</h3>
+                <p>Create and manage organizational structures, establish parent-child relationships, and define organizational boundaries for reporting.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Facility Tracking</h3>
+                <p>Record and monitor facilities across your organization, including location data and environmental impact information.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Emission Reporting</h3>
+                <p>Create detailed emission reports for specific reporting periods and track emission data across your organization.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>CSRD Compliance</h3>
+                <p>Generate CSRD-compliant reports and validate them against European Sustainability Reporting Standards (ESRS).</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Data Verification</h3>
+                <p>Ensure data quality with verification mechanisms and audit trails for all sustainability data.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Comprehensive Dashboard</h3>
+                <p>Monitor compliance status, track reporting deadlines, and view sustainability performance at a glance.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Technical Details</h2>
+            <p>OpenFootprint is built using modern web technologies:</p>
+            <ul>
+                <li><strong>Backend:</strong> FastAPI (Python) with SQLAlchemy ORM</li>
+                <li><strong>Frontend:</strong> React with responsive design</li>
+                <li><strong>Database:</strong> PostgreSQL for robust data storage</li>
+                <li><strong>API:</strong> RESTful API with comprehensive documentation</li>
+                <li><strong>Testing:</strong> Comprehensive unit and integration tests</li>
+                <li><strong>Documentation:</strong> Detailed user and developer guides</li>
+            </ul>
+        </div>
+        
+        <div class="cta">
+            <h2>Get Started with OpenFootprint</h2>
+            <p>Visit our GitHub repository to access the complete source code and documentation.</p>
+            <a href="https://github.com/d-ajvdvoort/openfootprint" class="button">View on GitHub</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>OpenFootprint - CSRD Compliance Reporting Software &copy; 2025</p>
+    </footer>
+</body>
+</html>
